@@ -16,6 +16,71 @@
 
     <!-- FORMULAIRE DE RESERVATION -->
     <!-- au cas ou t'aurais pas compris place ton fromulaire ici. A+ Manfred -->
+    <form action="https://kode.ch/getpost">
+        <ul>
+            <div>
+                <li>
+                <select name="lisHotel" id="bg">
+                    <option value="1.jpg" selected >--Sélectionnez un hôtel--</option>
+                    <option value="2.jpg">Hôtel City </option>
+                    <option value="3.jpg">Hôtel National</option>
+                    <option value="4.jpg">Hôtel Le Midi</option>
+                    <option value="5.jpg">Hôtel Victoria</option>
+                </select>
+            </li>
+            </div>
+            div
+            <li>
+                <label for="nbrChambre">Nombres de chambres :</label>
+                <input id="nbrChambre" name="nbrChambre" type="number">
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Type de chambre</legend>
+
+                    <label>
+                        <input type="radio" name="type[]" value="stdSimple">
+                        <span>Standard simple</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="type[]" value="stdDouble">
+                        <span>Standard double</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="type[]" value="supSimple">
+                        <span>Supérieur simple</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="type[]" value="supDouble">
+                        <span>Supérieur double</span>
+                    </label>
+                </fieldset>
+            </li>
+            <fieldset>
+                <legend>Options disponibles</legend>
+
+                <label>
+                    <input type="checkbox" name="options" value="1">
+                    <span>Petit déjeuner</span>
+                    <input type="checkbox" name="options" value="2">
+                    <span>TV</span>
+                    <input type="checkbox" name="options" value="3">
+                    <span>Journaux</span>
+                    <input type="checkbox" name="options" value="4">
+                    <span>Ordinateur</span>
+                    <input type="checkbox" name="options" value="5">
+                    <span>Accès wifi</span>
+                    <input type="checkbox" name="options" value="6">
+                    <span>Animaux de compagnie</span>
+                </label>
+            </fieldset>
+            </li>
+            <li>
+                <button>Reset</button>
+                <button>Réserver</button>
+            </li>
+        </ul>
+    </form>
 </div>
 
 <!-- RESERVATION -->
